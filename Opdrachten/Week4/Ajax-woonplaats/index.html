@@ -35,14 +35,18 @@
 					$("#lng").text(adres.geometry.location.lng);
 				}
 			}
-
+function verwerkFout(error) {
+	console.log(error);
+	
+}
 			$(function () {
 				// de JSON data ophalen
 				$.ajax({
 					type : 'GET',
-					url : 'json/adres.json.php',
+					url : 'json/adres.json',
 					dataType : 'json',
-					success : verwerkJSON
+					success : verwerkJSON,
+					error: verwerkFout
 				});
 				// let op : success is met 2 C's en 2 S'en ...
 
