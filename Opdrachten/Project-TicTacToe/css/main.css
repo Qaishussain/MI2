@@ -185,7 +185,7 @@ td {
 }
 .current-player {
   color: black !important;
-  -webkit-transform: scale(1.5);
+ 
 }
 .X-marker {
   color: #663366;
