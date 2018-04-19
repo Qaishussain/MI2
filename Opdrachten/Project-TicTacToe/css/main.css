@@ -1,0 +1,201 @@
+h3{
+	color: darkred;
+}
+.fly-in-text {
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.fly-in-text li {
+	display: inline-block;
+	margin-right: 50px;
+	font-family: Open Sans, Arial;
+	font-weight: 300;
+	font-size: 4em;
+	color: #fff;
+	opacity: 1;
+	transition: all 2.5s ease;
+
+}
+
+.fly-in-text li:last-child {
+	margin-right: 0;
+}
+
+.fly-in-text.hidden li {
+	opacity: 0;
+}
+
+.fly-in-text.hidden li:nth-child(1) {
+	transform: translateX(-200px) translateY(-200px);
+}
+
+.fly-in-text.hidden li:nth-child(2) {
+	transform: translateX(20px) translateY(100px);
+}
+
+.fly-in-text.hidden li:nth-child(3) {
+	transform: translateX(-150px) translateY(-80px);
+}
+
+.fly-in-text.hidden li:nth-child(4) {
+	transform: translateX(10px) translateY(-200px);
+}
+
+.fly-in-text.hidden li:nth-child(5) {
+	transform: translateX(-300px) translateY(200px);
+}
+
+.fly-in-text.hidden li:nth-child(6) {
+	transform: translateX(20px) translateY(-20px);
+}
+
+.fly-in-text.hidden li:nth-child(7) {
+	transform: translateX(30px) translateY(200px);
+}
+
+.fly-in-text.hidden li:nth-child(8) {
+	transform: translateX(30px) translateY(200px);
+}
+
+
+.buttonSubmit {
+	border-radius: 48px;
+
+	border: 1px solid white;
+	color: darkred;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.buttonSubmit span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.buttonSubmit span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.buttonSubmit:hover span {
+	padding-right: 20px;
+	padding-left: 20px;
+
+}
+
+.buttonSubmit:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+.buttonPlay {
+	border-radius: 10px;
+	border: 1px solid Darkred;
+	color: White;
+	background-color: darkred;
+	text-align: center;
+	font-size: 15px;
+	padding: 20px;
+	width: 100px;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.buttonPlay:hover{
+ color: darkred;
+	background-color: white;
+	padding-right: 20px;
+	padding-left: 20px;
+
+}
+
+
+form {
+	margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid darkred;
+	border-radius: 1em;
+}
+
+form div + div {
+	
+
+	margin-top: 1em;
+	
+}
+label{
+	color: darkred;
+}
+.special {
+	padding-top: 10px;
+		padding-bottom: 1rem;
+}
+ footer {
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 0px 50px 0px;
+        overflow: hidden;
+    }
+table {
+  margin-left:auto; 
+  margin-right:auto; 
+  width: 551px; 
+  -webkit-user-select: none; 
+}
+td {
+  height: 175px;
+  width: 175px;
+  text-align: center;
+  font-size: 120px;
+  border: 2px solid #cccccc;
+  -webkit-border-radius: 10px;
+}
+#players {
+  margin-left:auto; 
+  margin-right:auto;
+  padding: 20px 10px 10px 10px;
+  width: 511px; 
+  text-align: left;
+}
+#players > div {
+  display: inline-block;
+  padding-right: 25px;
+  color: #cccccc;
+  -webkit-transition-duration: 200ms;
+}
+.button {
+  float: right;
+}
+.current-player {
+  color: black !important;
+  -webkit-transform: scale(1.5);
+}
+.X-marker {
+  color: #663366;
+}
+.X-marker:before {
+  content: "X";
+}
+.O-marker {
+  color: #CC0033;
+}
+.O-marker:before {
+  content: "O";
+}
