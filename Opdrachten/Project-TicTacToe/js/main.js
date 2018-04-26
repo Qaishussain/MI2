@@ -1,4 +1,4 @@
-
+var counter = 1, muziek;
 var myApp = new Framework7();
 var $$ = Dom7;
 // Add view
@@ -6,19 +6,23 @@ var mainView = myApp.addView('.view-main', {
 	dynamicNavbar: true
 });
 var board = new Array(9);
+
 $(document).ready(function () {
+	
 	//document.getElementById("speel").style.visibility = "hidden";
 	//hide(document.getElementById('speel'));
     //init();
 });
 
 myApp.onPageInit('speel', function (page) {
-
+muziek = document.getElementById("muziek");
+    $('#muziek')[0].loop = true;
+    $('#muziek')[0].play();
     init();
 })
 function init() {
-
-  var down = "mousedown"; var up = "mouseup"; 
+	
+	var down = "mousedown"; var up = "mouseup"; 
   if ('createTouch' in document) { down = "touchstart"; up ="touchend"; }
   
   /* add event listeners */
@@ -32,8 +36,24 @@ function init() {
   createBoard();
   setInitialPlayer();
 }
+// Functie om het spel te herstarten
+function herstartFunction() {
+    window.location.href = "index.html";
+}
+//Functie om de muziek te pauzeren en terug af te spelen
+function pauseFunction() { 
+		if(document.getElementById('BtnPlay').clicked == true){
 
+		muziek = document.getElementById("muziek");
+    $('#muziek')[0].loop = true;
+    $('#muziek')[0].play();
+	
+		
+	}else{
+		    return muziek.paused ? muziek.play() : muziek.pause();
+	}
 
+}
 function createBoard() {
 
  
