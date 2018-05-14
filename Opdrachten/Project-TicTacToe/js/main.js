@@ -48,8 +48,8 @@ document.getElementById("button-black").onclick = function () {
 
 
 myApp.onPageInit('speel', function (page) {
-	document.getElementById("O").innerHTML = "Speler " + playerO;
-	document.getElementById("X").innerHTML = "Speler " + playerX;
+	document.getElementById("O").innerHTML = "O: " + playerO;
+	document.getElementById("X").innerHTML = "X: " + playerX;
 	init();
 	play();
 
