@@ -1,37 +1,35 @@
-"use strict";
-/*global document,$ */
-var output = "";
-$(function () {
-	// enter
-	$("#search").on('click', function () {
+ "use strict";
+        /*global $ */
+        var me = this;
 
-		var searchTerm = $("#searchTerm").val();
-		var url = "http://www.songsterr.com/a/ra/songs/byartists.json?artists=" + searchTerm;
-		$.ajax({
-			url: url,
-			type: 'GET',
-			async: false,
-			dataType: "json",
-			success: function (data, status, jqXHR) {
-				//console.log(data);
-				//$("#output").html();
-				
-				for (var i = 0 ; i <= data.length; i++) {
-					var odj = data.title[i];
-					for(var y = 0; i <= odj.length; y++) {
-						
-						output += odj.type+" "+ odj[y] + "br " ;
-					}
-					
-				 
-				}
+        function SearchSongs(){
+            var artist = document.getElementById("artist").value;
+            alert(artist);
+            $.ajax({
+                url: 'http://www.songsterr.com/a/ra/songs.json?pattern='+ artist,
 
-//document.getElementById("#output") = "output";
-				console.log("gelukt");
+                type: 'GET',
+                error: function() {
+                    // process error
+                    console.log('Error');
+                    console.log('Error');
+                    console.log('Error');
+                    console.log('Error');
+                    console.log('Error');
+                    console.log('Error');
+                },
 
-			}
+                success: function(data) {
+                    // process the result here 
+                    var output ="";
+                    for (var i = 0; i < data.length; i++) {
+                         output += `<tr><td>${data[i].title}</td><td>${data[i].artist.nameWithoutThePrefix}</td></tr>`;
+                    
 
-		});
+                    };
+                    document.getElementById("output").innerHTML = "<table>" + output + "</table>";
+                    //console.log(data);
+                }
 
-	});
-});
+            })
+}

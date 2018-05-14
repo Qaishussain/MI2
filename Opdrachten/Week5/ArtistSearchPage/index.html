@@ -17,18 +17,22 @@
 <body>
 	<table>
 		<caption style="text-align: center">Find your favourite artist</caption>
-
+		<p> Informatie uit de andere pagina :
+			<br> Opgehaald om :
+                    <span id="tijd"> </span>
+</p>
 		<tbody>
 			<tr>
 				<td>
-						<input id="searchTerm" name="search" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder=" Artist Name"><br>
+						<input id="artist" name="search" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder=" Artist Name"><br>
 						
-						<button id='search' type="button" class="btn btn-primary">Search</button>
+						<button id='search' onclick="SearchSongs()" type="button" class="btn btn-primary">Search</button>
 				</td>
 
 			</tr>
 			<tr>
 	<td>
+	
 		<div id="output">
 			
 		</div>
@@ -36,6 +40,9 @@
 	
 
 </tr>
+	 
+                
+               
 		</tbody>
 	</table>
 

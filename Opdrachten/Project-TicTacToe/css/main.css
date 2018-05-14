@@ -1,6 +1,17 @@
-h3{
+h3,
+h1 {
 	color: darkred;
 }
+
+h1 {
+	font-size: 20px;
+	text-align: center
+}
+
+#specialText {
+	font-size: 30px;
+}
+
 .fly-in-text {
 	list-style: none;
 	position: absolute;
@@ -19,6 +30,27 @@ h3{
 	opacity: 1;
 	transition: all 2.5s ease;
 
+}
+
+.imgDiv {
+	text-align: center;
+}
+
+.responsive {
+	border: solid 1px darkred;
+	width: 50%;
+	height: auto;
+}
+
+#textRule {
+	padding-left: 10px;
+
+}
+
+#menuItems {
+	border: solid 1px darkred;
+	background-color: darkred;
+	color: white;
 }
 
 .fly-in-text li:last-child {
@@ -61,6 +93,10 @@ h3{
 	transform: translateX(30px) translateY(200px);
 }
 
+.button:hover {
+	background-color: darkred;
+	color: white;
+}
 
 .buttonSubmit {
 	border-radius: 48px;
@@ -111,20 +147,35 @@ h3{
 	background-color: darkred;
 	text-align: center;
 	font-size: 15px;
-	padding: 20px;
+	padding: 10px;
 	width: 100px;
 	cursor: pointer;
-	margin: 4px;
+	margin: 0px;
 }
 
-.buttonPlay:hover{
- color: darkred;
+p {
+	border-bottom: solid 1px darkred;
+
+
+}
+
+.buttonPlay:hover {
+	color: darkred;
 	background-color: white;
 	padding-right: 20px;
 	padding-left: 20px;
 
 }
 
+#OP,
+#XP {
+
+	border: solid 1px darkred;
+}
+
+#aSpecial {
+	padding-left: 50px;
+}
 
 form {
 	margin: 0 auto;
@@ -134,68 +185,409 @@ form {
 	border-radius: 1em;
 }
 
+.btnNewgame {
+	width: 80%;
+	text-align: center;
+}
+
 form div + div {
-	
+
 
 	margin-top: 1em;
-	
+
 }
-label{
+
+label {
 	color: darkred;
 }
+
 .special {
 	padding-top: 10px;
-		padding-bottom: 1rem;
+	padding-bottom: 1rem;
 }
- footer {
-        width: 100%;
-        margin: 0 auto;
-        padding: 40px 0px 50px 0px;
-        overflow: hidden;
-    }
-table {
-  margin-left:auto; 
-  margin-right:auto; 
-  width: 551px; 
-  -webkit-user-select: none; 
+
+footer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0px 50px 0px;
+	overflow: hidden;
 }
+
+.tableSpecial {
+	margin-left: auto;
+	margin-right: auto;
+	width: 551px;
+	-webkit-user-select: none;
+}
+
+th {
+	color: darkred;
+	border-bottom: solid 1px darkred;
+	padding: 2px;
+}
+
 td {
-  height: 175px;
-  width: 175px;
-  text-align: center;
-  font-size: 120px;
-  border: 2px solid #cccccc;
-  -webkit-border-radius: 10px;
+	text-align: center;
 }
+
+.specialTd {
+
+	height: 175px;
+	width: 175px;
+	text-align: center;
+	font-size: 120px;
+	border: 2px solid #cccccc;
+	-webkit-border-radius: 10px;
+	background-color: darkred;
+
+}
+
 #players {
-  margin-left:auto; 
-  margin-right:auto;
-  padding: 20px 10px 10px 10px;
-  width: 511px; 
-  text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 10px 10px 10px;
+	width: 511px;
+	text-align: left;
 }
+
 #players > div {
-  display: inline-block;
-  padding-right: 25px;
-  color: #cccccc;
-  -webkit-transition-duration: 200ms;
+	display: inline-block;
+	padding-right: 25px;
+	color: #cccccc;
+	-webkit-transition-duration: 200ms;
 }
+
 .button {
-  float: right;
+	float: center;
 }
+
 .current-player {
-  color: black !important;
- 
+	color: darkred !important;
+
 }
+
 .X-marker {
-  color: #663366;
+	color: white;
 }
+
 .X-marker:before {
-  content: "X";
+	content: "X";
 }
+
 .O-marker {
-  color: #CC0033;
+	color: White;
+
 }
+
 .O-marker:before {
-  content: "O";
+	content: "O";
+
+}
+
+
+@media (max-width: 800px) {
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	#OP,
+	#XP {
+		width: 60%;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: auto;
+		padding: 10px;
+		width: 30%;
+		cursor: pointer;
+		margin: 0px;
+
+	}
+}
+
+@media (max-width: 768px) {
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	.specialTd {
+		height: 250px;
+		width: 30%;
+		text-align: center;
+		font-size: 100px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	#OP,
+	#XP {
+		width: 50%;
+
+	}
+	form {
+		margin: auto;
+		width: 80%;
+		padding: 1em;
+		border: 1px solid darkred;
+		border-radius: 1em;
+	}
+	.buttonSubmit {
+		border-radius: 48px;
+
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: auto;
+		padding: 10px;
+		width: 50%;
+		cursor: pointer;
+		margin: 0px;
+
+	}
+	#aSpecial {
+		padding-left: 50px;
+	}
+	.specialTd {
+
+		width: 25%;
+		text-align: center;
+		font-size: 60px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+
+	#players {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 10px 0px 10px;
+		width: 90%;
+		text-align: center;
+		font-size: 20px;
+	}
+	.tableSpecial {
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+		-webkit-user-select: none;
+	}
+	h1 {
+		font-size: 20px;
+		text-align: center
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	.specialTd {
+		height: 130px;
+		width: 30%;
+		text-align: center;
+		font-size: 60px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+
+	#players {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 10px 0px 10px;
+		width: 90%;
+		text-align: center;
+		font-size: 20px;
+	}
+	.tableSpecial {
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+		-webkit-user-select: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	.specialTd {
+		height: 160px;
+		width: 30%;
+		text-align: center;
+		font-size: 60px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+}
+
+@media (max-width: 400px) {
+
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	.specialTd {
+		height: 108px;
+		width: 30%;
+		text-align: center;
+		font-size: 60px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+	#players {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 0px 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+}
+
+}
+
+@media (max-width: 375px) {
+
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	.specialTd {
+		height: 180px;
+		width: 30%;
+		text-align: center;
+		font-size: 60px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+
+}
+
+@media (max-width: 360px) {
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	.specialTd {
+		height: 130px;
+		width: 30%;
+		text-align: center;
+		font-size: 60px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+	#players {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 10px 0px 10px;
+		width: 90%;
+		text-align: center;
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 200px) {
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+
+	#aSpecial {
+		padding-left: 0px;
+		word-break: break-all;
+	}
+	#players {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 0px 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+}
+}
+
+@media (min-width: 900px and max-width: 1024px) {
+	.fly-in-text {
+
+		list-style: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	form {
+		text-align: center;
+		height: auto;
+		margin: 0 auto;
+		width: 800px;
+		padding: 1em;
+		border: 1px solid darkred;
+		border-radius: 1em;
+		padding-bottom: 5%;
+
+	}
+	label,
+	h3 {
+		font-size: 2em;
+	}
+	#OP,
+	#XP {
+		font-size: 30px
+	}
+
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: 25px;
+		padding: 10px;
+		width: 200px;
+		cursor: pointer;
+		margin: 0px;
+	}
 }
