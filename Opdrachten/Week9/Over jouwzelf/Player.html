@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="image/TicTacToe.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1,  minimal-ui"> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Tic Tac Toe</title>      
+   <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+      
+      <link rel="stylesheet" href="css/main.css" type="text/css">
+      
+  <script src="js/jquery-1.11.1.min.js"></script>
+  </head>
+    
+  <body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <div class="panel panel-right panel-cover">
+        <div class="content-block">
+            <div id="highscoreDB">
+                <div>
+                    <h1>Highscore</h1> </div>
+                <table id="highscoreTableDB">
+                    <thead>
+                        <tr>
+                            <th>Naam speler</th>
+                            <th>Score speler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+     
+                            <td>Qais</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-left panel-reveal">
+      <div id="menuItems" class="content-block">Menu items</div>
+		<p><a href="info.html" class="home">Info</a></p>
+        <p><a href="Rules.html" class="home">Regels</a></p>
+         <footer>
+   
+                   <div class="imgDiv"><img src="image/TicTacToe.png" alt="Nature" class="responsive"></div> 
+                    <p id="textRule">&copy; Copyright by Qais Hussain.</p>
+                                   	<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+ 	<p>
+<a href="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png">
+    <img style="border:0;width:88px;height:31px"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"
+        alt="Valid Html!" />
+    </a>
+</p>
+         </footer>
+       
+    </div>
+    <div class="views">
+      <div class="view view-main">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center sliding">Wie ben ik?</div>
+            <div class="right">
+              <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars" ></i></a>
+            </div>
+          </div>
+        </div>
+          <div class="pages navbar-through toolbar-through">
+          <div data-page="index" class="page">
+            <div class="page-content">
+           <!-- <div class="content-block-title">Tic Tac Toe</div>-->
+              <div class="content-block">
+                <!--<div class="content-block-inner">-->
+              <div id="playersinvoer">
+           
+  
+						<form  class="fly-in-text hidden">
+							<header class="special">
+								<h3>Over me</h3>
+								<p>Informatie over de spel vindt u in the menu items</p>
+							</header>
+							<div>
+							<p>Ik ben Qais Hussain, 20 jaar oud.</p>
+							<p>Zoals jullie al weten iedereen heeft goede en slechte kanten, niemand is perfect dus ik zal maar eerst met mijn negatieve eigenschappen beginnen. Ten eerste wachten is niet echt mijn ding. Ik ben niet geduldig en ik wil alles snel klaar hebben. Ik begin me ongeduldig te voelen wanneer ik de adrenaline voel die door mijn lijf begint te stromen en wanneer ik de irritaties voel opkomen, dan kan ik niet meer wachten. Ongeduldigheid is voor me als een primaire reactie die het proces wilt versnellen. Ik weet zelf goed dat ik in het praktijk daarmee weinig kan bereiken, maar soms is het controleren van dit gevoel erg moeilijk voor me. Ik verwacht dat anderen over dezelfde snelheid beschikken als mij, dit kan ik als de oorzaak van mijn ongeduldigheid verklaren. <i class="fa fa-bars"></i> </p>
+        <p> Nu ga ik het hebben over mijn positieve eigenschappen. Ik ben ruimhartig. Ik sta wijd open voor wat er vanuit mijn omgeving naar me toe komt. In het heden leven is mijn bedoeling, ik maak me niet druk over wat er in het verleden is misgegaan en ik heb geen zorgen over de toekomst. Met de mensen die hulp nodig hebben heb ik altijd oprecht bewogen. Ik zet mijn hart open voor de mensen in nood. Het probleem met deze eigenschap is doordat ik vooral mijn gevoel laat spreken, heeft mijn geweten een zwakke rol.</p>
+							</div>
+
+
+						</form>
+						
+						<audio preload="auto" id="muziek">
+                            <source src="song/Eminem_Space_Bound.mp3" type="audio/mp3">
+                            <source src="Eminem_Space_Bound.ogg" type="audio/ogg"> </audio>
+					
+                 </div>
+                
+                  </div>
+                   
+            </div>
+          </div>
+        </div>
+                    	
+                     	<div class="toolbar">
+				<div class="toolbar-inner"> <a href="#" class="button" onclick="herstartFunction()">Herstarten</a> <a href="#" id ="BtnPlay" class="button" onclick="pauseFunction()">Muziek Uit/Aan</a> <a href="#" data-panel="right" class="button open-panel">Scoreboard</a> </div>
+			</div>
+     
+      </div>
+    </div>
+   <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->   
+      <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Homepagina</title>
+	<meta name="Homepagina" content="Artist">
+	<link rel="stylesheet" href="css2.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="request.js"></script>
+
+</head>
+
+<body>
+	<table>
+		<caption style="text-align: center">Find your favourite artist</caption>
+		<p> Informatie uit de andere pagina :
+			<br> Opgehaald om :
+                    <span id="tijd"> </span>
+</p>
+		<tbody>
+			<tr>
+				<td>
+						<input id="artist" name="search" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder=" Artist Name"><br>
+						
+						<button id='search' onclick="SearchSongs()" type="button" class="btn btn-primary">Search</button>
+				</td>
+
+			</tr>
+			<tr>
+	<td>
+	
+		<div id="output">
+			
+		</div>
+	</td>
+	
+
+</tr>
+	 
+                
+               
+		</tbody>
+	</table>
+
+</body>
+
+</html>
