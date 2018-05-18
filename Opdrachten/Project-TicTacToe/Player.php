@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="image/TicTacToe.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1,  minimal-ui"> 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Tic Tac Toe</title>      
@@ -68,8 +68,23 @@
 		<p><a href="info.html" class="home">Info</a></p>
         <p><a href="Rules.html" class="home">Regels</a></p>
          <footer>
+   
                    <div class="imgDiv"><img src="image/TicTacToe.png" alt="Nature" class="responsive"></div> 
                     <p id="textRule">&copy; Copyright by Qais Hussain.</p>
+                                   	<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+ 	<p>
+<a href="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png">
+    <img style="border:0;width:88px;height:31px"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"
+        alt="Valid Html!" />
+    </a>
+</p>
          </footer>
        
     </div>
@@ -90,19 +105,32 @@
               <div class="content-block">
                 <!--<div class="content-block-inner">-->
               <div id="playersinvoer">
-						<form class="fly-in-text hidden">
+              <script>
+                $.ajax
+  ({
+   type: "POST",
+   url: "php/upload.php",
+   data: dataString,
+   cache: false,
+   success: function(html)
+   {
+      document.getElementById("XP").innerHTML = html;
+	  document.getElementById("OP").innerHTML = html;
+   } 
+   });</script>
+						<form  class="fly-in-text hidden">
 							<header class="special">
 								<h3>Gelieve Naam van de spelers in te geven </h3>
 							</header>
 							<div>
-								<label for="PlayerX">Speler X</label>
+								<label>Speler X</label>
 								<input name="PlayerX" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="XP" />
 							</div>
-							<div><label for="¨PLayerO">Speler O</label>
+							<div><label>Speler O</label>
 								<input name="playerO" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="OP" />
 							</div>
 
-							<div id="aSpecial"><a href="#" id="playButton"> <input type="button"  value="Play" class="buttonPlay" id="button-black"/> </a></div>
+							<div id="aSpecial"><a href="#" id="playButton"> <input type="button" name="play"  value="Play" class="buttonPlay" id="button-black"/> </a></div>
 
 
 						</form>

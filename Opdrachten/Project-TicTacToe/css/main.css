@@ -232,7 +232,7 @@ td {
 
 .specialTd {
 
-	height: 175px;
+	height: 169px;
 	width: 175px;
 	text-align: center;
 	font-size: 120px;
@@ -257,9 +257,7 @@ td {
 	-webkit-transition-duration: 200ms;
 }
 
-.button {
-	float: center;
-}
+
 
 .current-player {
 	color: darkred !important;
@@ -301,13 +299,27 @@ td {
 		color: White;
 		background-color: darkred;
 		text-align: center;
-		font-size: auto;
+		font-size: 15px;
 		padding: 10px;
 		width: 30%;
 		cursor: pointer;
 		margin: 0px;
 
 	}
+	.buttonSubmit {
+		border-radius: 48px;
+
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+
 }
 
 @media (max-width: 768px) {
@@ -317,13 +329,39 @@ td {
 		height: auto;
 	}
 	.specialTd {
-		height: 250px;
+		height: 240px;
 		width: 30%;
 		text-align: center;
-		font-size: 100px;
+		font-size: 170px;
 		border: 2px solid #cccccc;
 		-webkit-border-radius: 10px;
 		background-color: darkred;
+	}
+	.buttonSubmit {
+		border-radius: 48px;
+		background-color: white;
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: 15px;
+		padding: 10px;
+		width: 50%;
+		cursor: pointer;
+		margin: 0px;
+
 	}
 
 }
@@ -349,7 +387,7 @@ td {
 	}
 	.buttonSubmit {
 		border-radius: 48px;
-
+		background-color: white;
 		border: 1px solid white;
 		color: darkred;
 		text-align: center;
@@ -366,7 +404,7 @@ td {
 		color: White;
 		background-color: darkred;
 		text-align: center;
-		font-size: auto;
+		font-size: 13px;
 		padding: 10px;
 		width: 50%;
 		cursor: pointer;
@@ -438,6 +476,32 @@ td {
 		width: 100%;
 		-webkit-user-select: none;
 	}
+	.buttonSubmit {
+		background-color: white;
+		border-radius: 48px;
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: 14px;
+		padding: 10px;
+		width: 50%;
+		cursor: pointer;
+		margin: 0px;
+
+	}
 }
 
 @media (max-width: 450px) {
@@ -446,14 +510,49 @@ td {
 		width: 90%;
 		height: auto;
 	}
+
 	.specialTd {
-		height: 160px;
+		height: 149.5px;
 		width: 30%;
 		text-align: center;
-		font-size: 60px;
+		font-size: 107px;
 		border: 2px solid #cccccc;
 		-webkit-border-radius: 10px;
 		background-color: darkred;
+	}
+	#players {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 10px 0px 10px;
+		width: 90%;
+		text-align: center;
+		font-size: 18px;
+	}
+	.buttonSubmit {
+		background-color: white;
+		border-radius: 48px;
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: 13px;
+		padding: 10px;
+		width: 50%;
+		cursor: pointer;
+		margin: 0px;
+
 	}
 }
 
@@ -465,43 +564,102 @@ td {
 		height: auto;
 	}
 	.specialTd {
-		height: 108px;
-		width: 30%;
+		height: 140.5px;
 		text-align: center;
-		font-size: 60px;
-		border: 2px solid #cccccc;
+		column-fill: auto;
+		font-size: 102px;
 		-webkit-border-radius: 10px;
 		background-color: darkred;
+
 	}
 	#players {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px 10px 0px 10px;
-    width: 90%;
-    text-align: center;
-    font-size: 18px;
-}
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 10px 0px 10px;
+		width: 90%;
+		text-align: center;
+		font-size: 15px;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: 13px;
+		padding: 10px;
+		width: 50%;
+		cursor: pointer;
+		margin: 0px;
+
+	}
+	.buttonSubmit {
+		background-color: white;
+		border-radius: 48px;
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
 
 }
 
 @media (max-width: 375px) {
-
+	.buttonPlay:hover {
+		color: darkred;
+		background-color: white;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 	.responsive {
 		border: solid 1px darkred;
 		width: 90%;
 		height: auto;
 	}
 	.specialTd {
-		height: 180px;
+		height: 127px;
 		width: 30%;
 		text-align: center;
-		font-size: 60px;
+		font-size: 90px;
 		border: 2px solid #cccccc;
 		-webkit-border-radius: 10px;
 		background-color: darkred;
 	}
+	.buttonSubmit {
+		background-color: white;
+		border-radius: 48px;
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+
+		padding: 10px;
+
+		cursor: pointer;
+		margin: 0px;
+
+	}
 
 }
+
+
 
 @media (max-width: 360px) {
 	.responsive {
@@ -509,11 +667,37 @@ td {
 		width: 90%;
 		height: auto;
 	}
+	.buttonSubmit {
+		background-color: white;
+		border-radius: 48px;
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: 12px;
+		padding: 10px;
+		width: 50%;
+		cursor: pointer;
+		margin: 0px;
+
+	}
 	.specialTd {
 		height: 130px;
 		width: 30%;
 		text-align: center;
-		font-size: 60px;
+		font-size: 93px;
 		border: 2px solid #cccccc;
 		-webkit-border-radius: 10px;
 		background-color: darkred;
@@ -528,7 +712,59 @@ td {
 	}
 }
 
+@media (max-width: 320px) {
+	.responsive {
+		border: solid 1px darkred;
+		width: 90%;
+		height: auto;
+	}
+	.specialTd {
+		height: 70px;
+		width: 30%;
+		text-align: center;
+		font-size: 50px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+	#players {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 10px 0px 10px;
+		width: 90%;
+		text-align: center;
+		font-size: 13px;
+	}
+	.buttonSubmit {
+		background-color: white;
+		border-radius: 48px;
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 100%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+	.buttonPlay {
+		border-radius: 10px;
+		border: 1px solid Darkred;
+		color: White;
+		background-color: darkred;
+		text-align: center;
+		font-size: 12px;
+		padding: 10px;
+		width: 50%;
+		cursor: pointer;
+		margin: 0px;
+
+	}
+}
+
 @media (max-width: 200px) {
+
 	.responsive {
 		border: solid 1px darkred;
 		width: 90%;
@@ -540,16 +776,31 @@ td {
 		word-break: break-all;
 	}
 	#players {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px 10px 0px 10px;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-}
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 10px 0px 10px;
+		width: 90%;
+		text-align: center;
+		font-size: 15px;
+	}
+
 }
 
-@media (min-width: 900px and max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1080px) {
+	.specialTd {
+		height: 300px;
+		text-align: center;
+		font-size: 213px;
+		border: 2px solid #cccccc;
+		-webkit-border-radius: 10px;
+		background-color: darkred;
+	}
+	.tableSpecial {
+		margin-left: auto;
+		margin-right: auto;
+		width: 700px;
+		-webkit-user-select: none;
+	}
 	.fly-in-text {
 
 		list-style: none;
@@ -590,4 +841,30 @@ td {
 		cursor: pointer;
 		margin: 0px;
 	}
+	.buttonSubmit {
+		border-radius: 48px;
+		background-color: white;
+		border: 1px solid white;
+		color: darkred;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 200px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 4px;
+	}
+	#players {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 10px 0px 10px;
+		width: 90%;
+		text-align: center;
+		font-size: 30px;
+	}
+	h1 {
+		font-size: 40px;
+		text-align: center
+	}
+
 }

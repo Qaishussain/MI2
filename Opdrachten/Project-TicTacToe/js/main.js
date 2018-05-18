@@ -1,3 +1,4 @@
+// Er zijn codes in mijn java documentb die van verschillende sites al w3school , framework 7  en nog andere komen
 var counter = 1,
 	muziek, naamX, naamO;
 var myApp = new Framework7();
@@ -48,8 +49,8 @@ document.getElementById("button-black").onclick = function () {
 
 
 myApp.onPageInit('speel', function (page) {
-	document.getElementById("O").innerHTML = "O: " + playerO;
-	document.getElementById("X").innerHTML = "X: " + playerX;
+	document.getElementById("O").innerHTML = "Player O: " + playerO;
+	document.getElementById("X").innerHTML = "Player X: " + playerX;
 	init();
 	play();
 
