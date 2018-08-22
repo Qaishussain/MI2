@@ -26,10 +26,9 @@
                          output += `<tr><td>${data[i].title}</td><td>${data[i].artist.nameWithoutThePrefix}</td></tr>`;
                     
 
-                    };
+                    });
                     document.getElementById("output").innerHTML = "<table>" + output + "</table>";
                     //console.log(data);
                 }
 
-            })
-}
+            }
